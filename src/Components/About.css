@@ -1,0 +1,28 @@
+#about {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #323742;
+    color: white;
+    max-width: 700px;
+
+}
+
+#about h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+#about p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    padding: 30px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+#about .highlight {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-weight: bold;
+    color:rgba(39, 186, 223, 0.781);
+}
