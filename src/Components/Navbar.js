@@ -1,11 +1,12 @@
 import React from 'react';
+import './Navbar.css';
 
-const Navbar = ({ setCurrentSection}) => {
+const Navbar = ({ setCurrentView }) => {
     return (
         <nav>
-            <a href="#home" onClick={() => setCurrentSection('home')}>Home</a>
-            <a href="#about" onClick={() => setCurrentSection('about')}>About</a>
-            <a href="#flashcard-container" onClick={() => setCurrentSection('flashcards')}>Flashcards</a>
+            <a href="#home" onClick={() => setCurrentView('home')}>Home</a>
+            <a href="#about" onClick={() => setCurrentView('about')}>About</a>
+            <a href="#flashcards-container" onClick={() => setCurrentView('flashcards')}>Flashcards</a>
         </nav>
     );
 };
