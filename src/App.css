@@ -1,62 +1,14 @@
-body {
-    background-color: #282c34;
-    color: white; /*TEXT*/
+.App {
+    text-align: center;
+}
+  
+.App-header {
+    background-color: #323742;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-nav {
-    margin-bottom: 20px;    
-}
-
-nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #62dafb;
-    align-items: space-between;
-}
-
-#flashcards-container {
-    position: relative;
-    width: 300px;
-    height: 200px;
-    perspective: 1000px;
-    margin-bottom: 20px;
-}
-
-.flashcard {
-    background-color: #282c34;
-    color: white; /*TEXT*/
-    width: 100%;
-    height: 100%;
-    border: 1px solid #61dafb;
-    position: absolute;
-    transform-style: preserve-3d;
-    transition: transform 0.5s;
-}
-
-.flashcard .front,
-.flashcard .back {
-    background-color: #282c34;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    text-align: center;
-}
-
-.flashcard .back {
-    transform: rotateY(180deg);
-}
-
-.flipped{
-    transform: rotateY(180deg);
+    font-size: calc(12px + 2vmin);
+    color: white;
 }

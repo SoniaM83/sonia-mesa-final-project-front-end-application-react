@@ -1,56 +1,34 @@
 import React, { useState } from 'react';
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
-import Flashcards from './Components/Flashcards';
+import FlashcardInput from './Components/FlashcardInput';
+import FlashcardDisplay from './Components/FlashcardDisplay';
 import About from './Components/About';
 import './App.css';
 
-const App = () => {
-  const [currentSection, setCurrentSection] = useState('home');
+function App() {
+  const [currentView, setCurrentView] = useState('home');
+  const [flashcards, setFlashcards] = useState([]);
 
-  const renderSection = () => {
-    switch (currentSection) {
-      case "home":
-        return <Home />;
-      case "flashcards":
-        return <Flashcards />;
-      case "about":
-        return <About />;
-      default:
-        return <Home />;
-    }
+  const addFlashcard = (question, answer) => {
+    setFlashcards([...flashcards, { question, answer }]);
   };
 
   return (
-    <div className='App'>
-      <Navbar setCurrentSection={setCurrentSection} />
-      {renderSection()}
-    </div>
-  );
-};
-
-export default App;
-
-/*function App() {
-  return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Navbar setCurrentView={setCurrentView} />
+        {currentView === 'home' && <Home />}
+        {currentView === 'flashcards' && ( 
+          <>
+            <FlashcardInput addFlashcard={addFlashcard} />
+            <FlashcardDisplay flashcards={flashcards} />
+          </>
+        )}
+        {currentView === 'about' && <About />}
       </header>
     </div>
   );
 }
 
 export default App;
-*/
