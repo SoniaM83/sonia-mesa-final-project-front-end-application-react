@@ -4,6 +4,8 @@
     align-items: center;
     gap: 1rem;
     padding: 20px;
+    width: 100%;
+    max-width: 450px;
 }
 
 #navigation-buttons {
