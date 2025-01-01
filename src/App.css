@@ -12,3 +12,13 @@
     font-size: calc(12px + 2vmin);
     color: white;
 }
+
+.flashcard-container { /*ADDED FOR SIDE-BY-SIDE LAYOUT */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem; /* SPACE BETWEEN COMPONENTS */
+    width: 100%;
+    max-width: 700px; /* LIMITS THE WIDTH */
+    margin: 0 auto; /* CENTERS CONTAINER */
+}
