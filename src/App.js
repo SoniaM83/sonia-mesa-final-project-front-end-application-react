@@ -20,10 +20,10 @@ function App() {
         <Navbar setCurrentView={setCurrentView} />
         {currentView === 'home' && <Home />}
         {currentView === 'flashcards' && ( 
-          <>
+          <div className="flashcard-container">
             <FlashcardInput addFlashcard={addFlashcard} />
-            <FlashcardDisplay flashcards={flashcards} />
-          </>
+            <FlashcardDisplay flashcards={flashcards} setFlashcards={setFlashcards} />
+          </div>
         )}
         {currentView === 'about' && <About />}
       </header>
