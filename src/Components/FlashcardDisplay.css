@@ -6,6 +6,8 @@
     padding: 20px;
     width: 100%;
     max-width: 450px;
+    background-color: #323742;  /* Bluish-gray background */
+    margin-top: 60px;  /* Add margin-top here as well */
 }
 
 #navigation-buttons {
