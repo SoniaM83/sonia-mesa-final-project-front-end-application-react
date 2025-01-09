@@ -1,17 +1,17 @@
 #about {
     font-family: Arial, sans-serif;
-    padding: 30px;
-    background-color: #323742;
+    padding: 20px;
+    background-color: #32374218;
     color: white;
     max-width: 700px;
-    margin-top: 0px;
+    margin-top: 20px;
     margin-bottom: 5px;
  }
 
 #about h2 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
-    margin-top: 60px;
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-top: 0px;
 }
 
 #about p {
@@ -27,5 +27,5 @@
     font-family: 'Courier New', Courier, monospace;
     font-style: italic;
     font-weight: bold;
-    color:rgba(39, 186, 223, 0.781);
+    color:rgb(169, 220, 169);
 }

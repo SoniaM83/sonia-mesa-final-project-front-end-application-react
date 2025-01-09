@@ -1,11 +1,12 @@
 nav {
     position: fixed; 
-    top: 0; /* SETS NAV TO TOP OF PAGES*/
+    top: 5px; /* SETS NAV TO TOP OF PAGES*/
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #323742; 
+    background-color: rgba(200, 194, 160, 0.187);
+
     border-radius: 50%;
     box-shadow: 25px 10px 20px 5px #232230d6;
     padding: 20px 0; /* CREATES BLACK LINES ABOVE AND BELOW THE NAVBAR*/
@@ -15,7 +16,7 @@ nav {
 }
 
 nav a {
-    background-color: #323742;
+    background-color: #32374200;
     color: white;
     text-decoration: none;
     font-size: 18px;

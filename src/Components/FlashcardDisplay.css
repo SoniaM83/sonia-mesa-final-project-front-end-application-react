@@ -6,8 +6,9 @@
     padding: 20px;
     width: 100%;
     max-width: 450px;
-    background-color: #323742;  /* Bluish-gray background */
-    margin-top: 60px;  /* Add margin-top here as well */
+    max-height: 150px;
+    background-color: #323742;  /* BLUISH-GRAY BACKGROUND */
+    margin-top: 60px;
 }
 
 #navigation-buttons {
@@ -17,7 +18,6 @@
     width: 100%;
     margin-top: 10px;
 }
-
 
 button {
     padding: 8px 16px;
@@ -32,17 +32,35 @@ button:hover {
 }
 
 .flashcard-output {
-    background-color: blanchedalmond;
+    background-color: rgba(234, 218, 194, 0.498);
     color: black;
-    padding: 25px; /*SPACE ABOVE & BELOW DISPLAYED INFO*/
+    padding: 10px; /*SPACE ABOVE & BELOW DISPLAYED INFO*/
     margin: 10px; /*SPACE AROUND OUTPUT AREA*/
+    width: 375px;
+    height: 200px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+    word-break: break-word;
+    text-align: center;
+    overflow-wrap: break-word;
 }
 
 .flashcard-output.flipped {
-    background-color: rgb(173, 246, 245);
+    background-color: rgba(200, 194, 160, 0.505);
 }
 
 .flashcards h2 {
     margin-top: 30px;
     margin-bottom: 0px; /* REDUCE SPACE BELOW THE HEADING */
 }                        
+
+.flashcard-output h3 {
+    font-size: calc(14px + 0.5vw);
+    line-height: 1.4;
+    word-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal;
+}
