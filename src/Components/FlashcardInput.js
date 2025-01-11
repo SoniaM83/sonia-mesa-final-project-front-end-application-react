@@ -8,7 +8,7 @@ const FlashcardInput = ({ addFlashcard }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (question && answer) {
-            addFlashcard(question, answer); // Call addFlashcard passed from parent
+            addFlashcard(question, answer); // CALL FLASHCARD PASSED FROM PARENT
             setQuestion('');
             setAnswer('');
         }
