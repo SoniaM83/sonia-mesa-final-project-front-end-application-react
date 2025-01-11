@@ -1,7 +1,7 @@
 nav {
     position: fixed; 
     top: 5px; /* SETS NAV TO TOP OF PAGES*/
-    width: 100%;
+    width: 75%;
     display: flex;
     justify-content: center;
     align-items: center;
