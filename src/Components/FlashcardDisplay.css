@@ -64,3 +64,23 @@ button:hover {
     word-wrap: break-word;
     white-space: normal;
 }
+
+/* FlashcardDisplay.css */
+
+@media (max-width: 768px) {
+    .flashcard-output {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .flashcard {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
