@@ -14,7 +14,7 @@
     align-items: center;
     justify-content: center;
     font-size: calc(12px + 2vmin);
-    
+    overflow: hidden;
 }
 
 .App-header h1, .App-header p, h2, nav {
@@ -22,9 +22,7 @@
     text-shadow: 
     2px 2px 4px #323742, /* SHADOW ON BOTTOM-RIGHT */
     2px -2px 4px rgba(0, 0, 0, 0.7);   /* SHADOW ON THE TOP-RIGHT */
-  
     font-weight: bold;
-
 }
 
 .flashcard-container { /*ADDED FOR SIDE-BY-SIDE LAYOUT */
