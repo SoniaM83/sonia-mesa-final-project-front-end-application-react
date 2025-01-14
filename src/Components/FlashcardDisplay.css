@@ -24,6 +24,7 @@ button {
     font-size: 14px;
     cursor: pointer;
     background-color: rgb(169, 220, 169);
+    width: auto;
 }
 
 button:hover {
@@ -37,7 +38,7 @@ button:hover {
     padding: 10px; /*SPACE ABOVE & BELOW DISPLAYED INFO*/
     margin: 10px; /*SPACE AROUND OUTPUT AREA*/
     width: 375px;
-    height: 200px;
+    height: 175px;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -65,12 +66,19 @@ button:hover {
     white-space: normal;
 }
 
-/* FlashcardDisplay.css */
-
 @media (max-width: 768px) {
+    #flashcards-container {
+        max-width: 100%;
+        max-height: auto;
+        margin-top: 20px;
+        padding: 15px;
+    }
+
     .flashcard-output {
-        width: 100%;
+        width: 90%;
+        max-width: 350px;
         padding: 10px;
+        margin: 10px auto;
     }
 
     .flashcard {
