@@ -12,10 +12,16 @@ function App() {
   const isInitialMount = useRef(true); //TRACKS INITIAL MOUNT
 
   useEffect(() => {
-    const savedFlashcards = localStorage.getItem('flashcards'); //GET FLASHCARDS FROM LOCAL STORAGE
-    if (savedFlashcards) {
-      console.log('Loaded from localStorage', JSON.parse(savedFlashcards));
-      setFlashcards(JSON.parse(savedFlashcards));
+    try {
+      if (typeof window !== 'undefined' && window.localStorage) { //CHECK IF LOCAL STORAGE IS AVAILABLE{
+        const savedFlashcards = localStorage.getItem('flashcards'); //GET FLASHCARDS FROM LOCAL STORAGE
+        if (savedFlashcards) {
+          console.log('Loaded from localStorage', JSON.parse(savedFlashcards));
+          setFlashcards(JSON.parse(savedFlashcards));
+        }
+      }
+    } catch (error) {
+    console.error('localStorage is unavailable', error);
     }
   }, []);
 
